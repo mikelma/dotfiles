@@ -14,11 +14,9 @@ paq {'glepnir/dashboard-nvim'} -- initial screen when opening neovim
 
 -- File manager
 paq {'kyazdani42/nvim-tree.lua'}
--- paq {'antoinemadec/FixCursorHold.nvim'} -- fern's dependency
--- paq {'lambdalisue/fern.vim'}            -- file manager (written in vimscript)
--- paq {'lambdalisue/fern-git-status.vim'} -- show git info inside fern
--- paq {'lambdalisue/fern-renderer-nerdfont.vim'} -- fern plugin to use file icons
 
+-- bar
+paq {'hoob3rt/lualine.nvim'}
 
 -- Completion and LSP
 paq {'hrsh7th/nvim-compe'}     -- autocompletion
@@ -41,6 +39,3 @@ paq {'nvim-lua/popup.nvim'}           -- telescope's dependency
 paq {'nvim-lua/plenary.nvim'}         -- telescope's dependency
 paq {'nvim-telescope/telescope.nvim'} -- fuzzy finder (and much more!)
 
--- bar
--- paq {'glepnir/galaxyline.nvim' , branch = 'main'}
-paq {'hoob3rt/lualine.nvim'}
