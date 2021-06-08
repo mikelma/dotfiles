@@ -41,6 +41,12 @@ opt('o', 'wildmode', 'list:longest')                  -- Command-line completion
 -- opt('w', 'relativenumber', false)                  -- Relative line numbers
 -- opt('w', 'wrap', false)				              -- Disable line wrap
 
+-- set gui options 
+if fn.has('termguicolors') == 1 then
+    opt('o', 'guifont', 'Hack Nerd Font Mono:h18')
+    opt('o', 'termguicolors', true)
+end
+
 -- Colors
 -- cmd 'colorscheme nvcode'
 -- cmd 'colorscheme blue-moon'
@@ -49,7 +55,6 @@ opt('o', 'wildmode', 'list:longest')                  -- Command-line completion
 -- cmd 'colorscheme material-nvim'
 cmd 'colorscheme tokyonight'
 g.tokyonight_style = "storm"
-
 
 -- -------- --
 -- Mappings --
